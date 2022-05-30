@@ -1,27 +1,12 @@
 
-(() => {
-  if (!localStorage.pureJavaScriptCookies) {
-    document.querySelector(".box-cookies").classList.remove('hide');
-  }
-  
-  const acceptCookies = () => {
-    document.querySelector(".box-cookies").classList.add('hide');
-    localStorage.setItem("pureJavaScriptCookies", "accept");
-  };
-  
-  const btnCookies = document.querySelector(".btn-cookies");
-  
-  btnCookies.addEventListener('click', acceptCookies);
-})();
-/**
-* Template Name: BizLand - v3.7.0
-* Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
-
+/* Cookies */
+$(document).ready(function(){
+  $("#cookies").addClass("display");
+   $("#close-cookies").click(function(){ 
+    event.preventDefault();
+    $("#cookies").addClass("close-cookies");
+  });
+});
   /**
    * Easy selector helper function
    */
