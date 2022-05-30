@@ -1,36 +1,4 @@
 
-(() => {
-  if (!localStorage.pureJavaScriptCookies) {
-    document.querySelector(".box-cookies").classList.remove('hide');
-  }
-  
-  const acceptCookies = () => {
-    document.querySelector(".box-cookies").classList.add('hide');
-    localStorage.setItem("pureJavaScriptCookies", "accept");
-  };
-  
-  const btnCookies = document.querySelector(".btn-cookies");
-  
-  btnCookies.addEventListener('click', acceptCookies);
-})();
-
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
-
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
-    }
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
 
   /**
    * Header fixed top on scroll
