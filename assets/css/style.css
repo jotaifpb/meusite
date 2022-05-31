@@ -6,7 +6,7 @@
 .box-cookies {
   position: fixed;
   background: rgba(0, 0, 0, .9);
-  width: 70%;
+  width: 100%;
   z-index: 998;
   bottom: 0;
   display: flex;
@@ -19,7 +19,7 @@
   text-align: center;
   padding: 25px;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .box-cookies .btn-cookies {
@@ -29,6 +29,7 @@
   padding: 20px;
   box-sizing:content-box;
   border-radius: 15px;
+  margin:10px;
   
 }
 
